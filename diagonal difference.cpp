@@ -9,21 +9,21 @@ int main(){
     scanf("%d",&n);
     int arr[n][n];
 
-    // Read in the array elements
-    for(i=0; i<n; i++){
+   
+    for(i=0; i<n; i++){                                 //for reading array elements
         for(j=0; j<n; j++){
-            scanf("%d",&arr[i][j]);
+            scanf("%d",&arr[i][j]);             
         }
     }
-
-    // Calculate the diagonal differences
-    for(i=0; i<n; i++){
+                                                       
+    
+    for(i=0; i<n; i++){                              //to claculate diagonal difference
         primary += arr[i][i];
         secondary += arr[i][n-i-1];
     }
 
-    // Print the absolute difference
-    printf("%d", abs(primary - secondary));
+    
+    printf("%d", abs(primary - secondary));         //printing difference abs!..absolute
 
     return 0;
 }
